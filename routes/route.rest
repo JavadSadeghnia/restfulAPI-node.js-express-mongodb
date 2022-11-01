@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6361100dfd26fbb76565466d
+
+###
+
+Post http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "walletAddress": "3",
+    "slackID": "3"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6361100dfd26fbb76565466d
+
+###
+
+PATCH http://localhost:3000/subscribers/6361101bfd26fbb76565466f
+Content-Type: application/json
+
+{
+    "walletAddress": "updated"
+}
